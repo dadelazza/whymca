@@ -1,0 +1,7 @@
+<div id="footer-main-container">
+	<div class="baloon-container" ng-repeat="item in footerItems" ng-click="selectItem(item, $index)">
+		<div tick tick-position="bottom" tick-color="#AD1136" item="item" class="baloon" ng-class="{ active : item.active }">
+			<a class="no_href" ng-class="{ active : item.active }" href="#/">{{item.label}}</a>
+		</div>
+	</div>
+</div>

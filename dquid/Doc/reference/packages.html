@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Javadoc API documentation for DQuid Client APIs V1.6.1 - Java." />
+
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+<title>
+
+  Package Index
+
+
+| DQuid Client APIs V1.6.1 - Java
+
+</title>
+<link href="./../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="./../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="./../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="./../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="./../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="./../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("./", "./../assets/");
+</script>
+<script src="./../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="./../assets/navtree_data.js" type="text/javascript"></script>
+<script src="./../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="gc-documentation">
+
+<div id="header">
+    <div id="headerLeft">
+    
+      <span id="masthead-title">DQuid Client APIs V1.6.1 - Java</span>
+    
+    </div>
+    <div id="headerRight">
+      
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, './')"
+                      onkeyup="return search_changed(event, false, './')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+      
+    </div>
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links">
+                <a href="./packages.html" class="selected" >Package Index</a> | 
+                <a href="./classes.html" >Class Index</a>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-">
+  <a href="./com/dquid/clientapi/package-summary.html">com.dquid.clientapi</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+              <script>
+                /*addLoadEvent(maxPackageHeight);*/
+              </script>
+              <p style="padding:10px">Select a package to view its members</p><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links">
+            <a href="./packages.html" class="selected" >Package Index</a> | 
+            <a href="./classes.html" >Class Index</a>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("./");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="jd-header">
+<h1>Package Index</h1>
+</div>
+
+<div id="jd-content">
+
+<div class="jd-descr">
+<p><h1>Introduction</h1>
+				<br>
+	 	
+			 	<p>
+			 	The DQuid Client APIs goal is to enable the visualization of data read from a vehicle toward the DQuid unit on a generic Smartphone.<br>
+				They comprehend an Android Library Project that you need to include to your Android Application Project.<br>
+		 			
+				</p>
+			
+				<br><br>
+			
+				<h1>Java Compatibility</h1>
+				
+				<br>
+				
+				<p> These APIs were compiled used Java SE 1.6</p>
+				
+				<br><br>
+				
+				<h1>Installation</h1>
+				<br>
+				<p>
+					In order to make the APIs work, you have to include the two jar files provided by DQuid as libraries for your application.<br><br>
+					A step by step description on how to use the APIs in Eclipse is reported below:<br><br>
+					<ul>
+							<li> Open eclipse and select from the main menu "File -> New -> Java Project"
+							<div class="imgclass">
+							<br><img src="../assets/images/1-file-new-javaProject.png">
+							
+							
+							<li> Select a project name and click "Finish"
+							<div class="imgclass">
+							<br><img src="../assets/images/2-projectName.png">
+							</div>
+							
+							<li> Right click on the project root and "New -> Folder"
+							<div class="imgclass">
+							<br><img src="../assets/images/3-newFolder.png">
+							</div>
+							  
+							<li> Call it as you wish, let's call it "libs" (it will contail the DQuid Libraries)
+							<div class="imgclass">
+							<br><img src="../assets/images/4-folder-name.png">
+							</div>
+							
+							<br> Drag & drop the two jars provided by DQuid into this folder
+							<div class="imgclass">
+							<br><img src="../assets/images/5-pasteLibs.png">
+							</div>
+							
+							
+							<li> Select the "Copy files" option and click "OK"
+							<div class="imgclass">
+							<br><img src="../assets/images/6-select-copy.png">
+							</div>
+							
+							<li> Let's include these libraries into our project: right click on the project root and "Build Path -> Configure Build Path.."
+							<div class="imgclass">
+							<br><img src="../assets/images/7-conf-build-path.png">
+							</div>
+							
+							<li> Be sure that you are in the "libraries" tab and click on the "Add JARs" button
+							<div class="imgclass">
+							<br><img src="../assets/images/8-add-jar.png">
+							</div>
+							
+							<br> Select the two jars just copied into the "lib" folder of our project, and click "OK". Then click again in the "OK" buttomn to close the project properties window.
+							<div class="imgclass">
+							<br><img src="../assets/images/9-select-jars.png">
+							</div>
+							
+							<br> Let's start to use the APIs: right click on the project root and select "New -> Class"
+							<div class="imgclass">
+							<br><img src="../assets/images/10-newClass.png">
+							</div>
+							
+							<br> This is the class that will listen to the upcoming events from the unit, let's call it DQuidListener. Click on "Finish" to create the class
+							<div class="imgclass">
+							<br><img src="../assets/images/11-DQListener.png.png">
+							</div>
+							
+							<br> Add the "implements DQuidListenerInterface" string and implement all the needed methods (like in the image below).<br> 
+								Write the implementation of these methods as you wish, for a detailed description of each one of them please refer to the documentation.
+							<div class="imgclass">
+							<br><img src="../assets/images/12-DQListener-impl.png">
+							</div>
+							
+							<br> We need to create the main class of our project, so: right clock on the project root and select "New -> Class"
+							<div class="imgclass">
+							<br><img src="../assets/images/13-newClass.png">
+							</div>
+							
+							<br> Let's call it "DQuidMainClass". Select the option "public static void main(String[] args)" to auto-create the main in this new class. Then click "Finish" to actually create it
+							<div class="imgclass">
+							<br><img src="../assets/images/14-DQuidMainClass.png">
+							</div>
+							
+							<br> Inside the "main" method:
+							
+							<ul>
+								<li> Init the APIs calling "UserVehicle.INSTANCE.init" and passing it a new Instance of the DQuidListener class (previously cretaed)
+								<li> Set the simulation mode to true (this version of the APIs only supports simulation mode, so it may crash if you miss this statement)
+								<li> Connect passing "-1" as a parameter (passing any other value will make the APIs crash);
+							</ul>
+							
+					</ul>
+					<br>Now your application project is correctly configured and the APIs are ready to be used.<br><br>
+					 
+				</p>
+			
+			
+				<br><br>
+				
+				<h1>Overview</h1>
+				<br>
+				<p>
+					The Client APIs package includes:<br>
+					<ul>
+							<li> DQuidListnerInterface: The interface you need to implement in order to receive data from the APIs
+							<li> UserVehicle: A singleton whose instance is accessible through UserVehicle.INSTANCE.<br>It gives the possibility to init the APIs, (dis)connect and get data from the DQuid unit.
+							<li> DQuidUtils: It contains signal definitions and some useful methods. 
+							<li> Data: It represents the main data object sent from the DQuid unit
+					</ul>
+					 
+				</p>
+				
+				
+				<br><br>
+				
+				
+				
+				<h1>Change Log:</h1>
+				<br>
+				<p>
+					<h2>1.6.1 Release Notes:</h2>
+					This release only works in simulation mode. It may be unstable and/or crash if you do not set the simulation mode to true before the connection. Any feedback is more than welcome
+					<br>
+					
+					<ul>
+							<li> Three steps connection:  <br>
+							just implement our interface, init the apis and connect. You will immediately receive your data.
+							<li> Simulation Mode:  <br>
+							Try these APIs without a real connection.  <br>
+							Use "UserVehicle.INSTANCE.setSimulationMode" method and "UserVehicle.INSTANCE.isSimulationModeEnabled" in order to deal with this feature.
+							
+					</ul>
+					
+					<br><br>
+					
+					
+					<h2>Missing/Will be available in next releases:</h2>
+					<br>
+					<ul>
+							<li> Working with real data.
+							<li> Car Autorecognition feature
+							<li> Serial check
+							<li> DQuid Autenthication
+							<li> Firmware Update
+							<li> Dynamic signal management
+							<li> Flight Mode (no need to have an internet connection to use the APIs)
+							<li> Manage more DQuid units.
+							<li> Google Analytics implementation (in order to have a better feedback about bugs/issues)
+							<li> Larger car database
+							<li> Various bug fixing
+					</ul>
+					 
+				</p>
+				
+				
+				<br><br></p>
+</div>
+
+
+<table class="jd-sumtable">
+
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-linkcol">
+  <a href="./com/dquid/clientapi/package-summary.html">com.dquid.clientapi</a></td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+
+
+</table>
+
+<div id="footer">
+You accept and expressly understand and agree that use of the material obtained is provided without warranty of any kind from DQuid, and the use is at your sole risk. You are the solely responsible for any damage to your computer system or other device or loss of data that results from such use.
+<br>-<br> 
+DQuid S.r.l.u Sole proprietorship<br>
+Company subject to the management and coordination of RE:Lab srl. <br>
+All rights Reserved. © 2013 
+<br> - <br>Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
+</div> <!-- end footer -->
+</div><!-- end jd-content -->
+</div> <!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize doclava-developer-docs.js */
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<div id="footer-detail-container" ng-class="{ active : activeItem }" collapse="MainCollapse.footerCollapsed">
+	<div id="tab-file-container">
+		<div id="tab-file" ng-class="{ visible : activeTab }">
+			<a href="{{activeTab.fileUrl}}" target="_blank"><img id="tab-file-icon" src="./images/download_pdf.png"></img></a>
+			<div id="tab-file-text">
+				<div id="tab-file-label">download datasheet</div>
+				<div id="tab-file-description"><a href="{{activeTab.fileUrl}}" target="_blank">{{activeTab.fileName}}</a></div>
+			</div>
+		</div>
+	</div>
+	<div id="tab-details" ng-class="{ visible : activeTab }">
+		<div id="tab-titles-container">
+			<div class="tab-title" ng-class="{ active : tab.active }" ng-repeat="tab in activeItem.tabs" ng-click="selectTab(tab, $index)">{{tab.title}}</div>
+		</div>
+		<div id="tab-description">{{activeTab.text}}</div>
+	</div>
+	<div class="clearfix" />
+</div>

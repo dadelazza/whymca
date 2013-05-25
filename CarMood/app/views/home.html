@@ -1,0 +1,23 @@
+
+<div ng-controller="MainCtrl">
+	<h1>test</h1>
+        <div class="car">
+           <div>frontLeftDoor: {{car.frontLeftDoor}}</div>
+           <div>headlights: {{car.headlights}}</div>
+           <div>backRightDoor: {{car.backRightDoor}}</div>
+           <div>speed: {{car.speed}}</div>
+           <div>frontRightDoor: {{car.frontRightDoor}}</div>
+           <div>frontLeftDoor: {{car.backLeftDoor}}</div>
+        </div> 
+        <div class="weather">
+           <img src='{{weather.icon}}'/>
+        </div> 
+        <div class="location">
+        	<div>latitude: {{position.coords.latitude}}</div>
+            <div>longitude: {{position.coords.longitude}}</div>
+        </div>
+        <div id="location"></div>
+        <button onclick="getLocation()">Try It</button> 
+        
+    </ul>
+</div>

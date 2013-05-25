@@ -1,0 +1,16 @@
+<div class="scrollable-canvas" ng-controller="ScrollCtrl">
+
+    <div class="content_head" ng-class="{content_head_shadow: scroll > 10, content_head_noshadow: scroll <= 10}">
+        {{text.title}}
+    </div>
+
+    <div class="content_container" scroll-position="scroll" >
+        <div class="contactus_content">
+            <div ng-include="text.content"></div>
+        </div>
+
+        <div class="contactus_google_map">
+            <div ng-include="text.google_map_path"></div>
+        </div>
+    </div>
+</div>

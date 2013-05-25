@@ -1,0 +1,9 @@
+{
+	"timestamp":"2013-05-25T11:15:23.528429",
+	"icon":"https://api.metwit.com/v2/icons/rainy",
+	"geo":{"type":"Point","coordinates":[9.18,45.45]},
+	"location":{"locality":"Milan","country":"Italy"},
+	"weather":{"status":"rainy","measured":
+			{"humidity":93,"wind_direction":300,"wind_speed":1.542,"temperature":282}
+		},
+	"sun_altitude":1.1441806554794312}

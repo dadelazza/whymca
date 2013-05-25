@@ -1,0 +1,28 @@
+<div class="scrollable-canvas" ng-controller="ScrollCtrl">
+
+    <div class="content_head" ng-class="{content_head_shadow: scroll > 10, content_head_noshadow: scroll <= 10}">
+        {{text.title}}
+    </div>
+
+    <p>
+    <div class="content_container"  scroll-position="scroll">
+        <div class="content_banner">
+            <img ng-src="{{text.img}}">
+        </div>
+
+    <div class="reorder">
+        <ul class="groups">
+            <li class="group" ng-repeat="g in text.groups">
+               <h3>{{g.name}}</h3>
+               <ul class="items">
+                    <li class="item" ng-repeat="i in g.items" ng-class-odd="'odd'" ng-class-even="'even'">
+                        <h4><a href="{{i.url}}" target="_blank">{{i.title}}</a></h4>
+                        <div class="item_left"><a href="{{i.url}}" target="_blank"><img class="portfolio_img" ng-src="{{i.img}}"></a></div>
+                        <p class="portfolio_subtext">{{i.text}}</p>
+                    </li>
+               </ul>
+            </li>  
+        </ul>
+    </div>
+
+</div>

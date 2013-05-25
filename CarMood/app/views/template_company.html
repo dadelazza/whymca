@@ -1,0 +1,65 @@
+<div class="scrollable-canvas" ng-controller="ScrollCtrl">
+
+    <div class="company_title_container" ng-class="{content_head_shadow: scroll > 10, content_head_noshadow: scroll <= 10}">
+        <div class="title">
+            {{text.title}}
+            <p class="subtitle">
+                <i>{{text.descTitle}}</i>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="content_container2" scroll-position="scroll">
+
+        <div class="title2">{{text.subTitle}}</div>
+
+        <!--<div class="company_collassable_content">-->
+            <!--<div ng-controller="CollapseDemoCtrl">-->
+                <!--<div class="company_read_less" ng-class="{visible : isCollapsed}">-->
+                    <!--<p ng-bind-html-unsafe="text.initRead" ></p>-->
+                    <!--<span class ="collapse_button" ng-click="isCollapsed = !isCollapsed">(<a>read more</a>)</span>-->
+                <!--</div>-->
+                <!--<div class="company_read_more" collapse="isCollapsed" ng-class="{visible : !isCollapsed}">-->
+                    <!--<p  ng-bind-html-unsafe="text.readMore"></p>-->
+                    <!--<span class="collapse_button" ng-click="isCollapsed = !isCollapsed">(<a>read less</a>)</span>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div class="company_collassable_content">
+            <div ng-controller="CollapseDemoCtrl">
+                <div class="company_read_less">
+                <p ng-bind-html-unsafe="text.initRead" ></p>
+                    <span class ="collapse_button" ng-click="isCollapsed = !isCollapsed" ng-class="{visibile : isCollapsed, hide : !isCollapsed}">(<a>read more</a>)</span>
+                </div>
+                <div class="company_read_more" collapse="isCollapsed" ng-class="{hide : isCollapsed, visible : !isCollapsed}">
+                    <p  ng-bind-html-unsafe="text.readMore"></p>
+                </div>
+                <div class="company_read_more">
+                    <span class="collapse_button" ng-click="isCollapsed = !isCollapsed" ng-class="{hide : isCollapsed, visible : !isCollapsed}">(<a>read less</a>)</span>
+                <div>
+
+            </div>
+        </div>
+
+            <div class="reorder">
+            <ul class="groups">
+                <li class="group" ng-repeat="g in text.groups">
+                   <h3>{{g.name}}</h3>
+                   <ul class="items">
+                        <li class="item" ng-repeat="i in g.items" ng-class-odd="'odd'" ng-class-even="'even'">
+                            <div class="item_left company"><img ng-src="{{i.img}}"></div>
+                            <div class="item_right">
+                                <h4><div>{{i.title}}</div></h4>
+                                <span>{{i.subtitle}}</span>
+                                <p id="company_profile_text">{{i.text}}</p>
+                            </div>
+                        </li>
+                   </ul>
+                </li>  
+            </ul>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+#header {
+  height: 183px;
+  border-bottom: 3px solid #0767a4;
+  background: transparent url("images/D_Quid_Bianco_Transp.png") top left no-repeat;
+}
+
+#search_filtered .jd-selected {
+  background-color: #0767a4;
+}
+
+#headerLeft {
+	margin-left: 192px;
+	margin-bottom: 91;
+}
+
+.imgclass img{
+     max-width: 100%;
+}

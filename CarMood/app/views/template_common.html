@@ -1,0 +1,64 @@
+<div class="scrollable-canvas" ng-controller="ScrollCtrl">
+
+    <div class="content_head" ng-class="{content_head_shadow: scroll > 10, content_head_noshadow: scroll <= 10}">
+        {{text.title}}
+    </div>
+
+
+    <div class="content_container" scroll-position="scroll" >
+
+        <div class="content_banner" >
+            <img ng-src="{{text.img}}">
+            <!-- FOR PATENTS ONLY-->
+
+            <p class="patent_desc">{{text.sub_desc}}</p>
+        </div>
+
+        <div class="content_text">
+            <div ng-include="text.content_url"></div>
+        </div>
+        
+
+
+
+        <!--For Careers ONLY -->
+        <div class="careers_container">
+            <div  ng-bind-html-unsafe="text.content"></div>
+            <div class="careers_text">
+                <p><a id="careers_top" href='mailto:careers@facilitylive.com'>{{text.form}}</a></p>
+            </div>
+            <p>{{text.content2}}</p>
+            <div class="careers_text" ng-repeat="p in text.profileDescription">
+                <!-- link to anchor -->
+                <p><a ng-click="scrollToHash(p.job_anchor)">{{p.job_title}}</a></p>
+            </div>
+            <div class="profile_titlehead">
+                <p>{{text.section}}</p>
+            </div>
+
+            <div class="careers_text" ng-repeat="profile in text.profileDescription">
+                <!--<p ng-bind-html-unsafe="text.profileLink"></p>-->
+                <!-- anchor -->
+                <a id="{{profile.job_anchor}}"></a>
+                <div class="title_inpage">
+                    <p>{{profile.job_title}}<span>  -</span>
+                    <span class="jobmail_link">
+                        <a href='mailto:careers@facilitylive.com?subject={{profile.job_title}}'><i>{{text.form}}</i></a>
+                    </span>
+                    </p>
+                </div>
+
+
+                <div>
+                        <p ng-include="profile.job_description" class="normal_text"></p>
+
+                        <p><a ng-click="scrollToHash('careers_top')">back to top</a></p>
+                        <br />
+                </div>
+
+            </div>
+        </div>
+        <!-- END -->
+    </div>
+
+</div>

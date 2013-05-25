@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu May 02 15:55:27 CEST 2013
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=fatjar/JavaClientApiTest.jar
+manifest.mergeall=true
+manifest.mainclass=com.dquid.test.DQuidAPILoader
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

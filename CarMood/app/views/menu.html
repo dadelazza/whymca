@@ -1,0 +1,21 @@
+<menu class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="brand">
+            <a class="logo" href="#/">
+                <img class="logo_img" src="./images/logo.png">
+            </a>
+            <div class="brand_subtitle">
+                <span class="caption">the <span class="red">information 3D</span> platform</span>
+            </div>
+        </div>
+        
+        <ul class="nav" ng-controller="ContentCtrl" >
+            <div tick  tick-position="left" tick-color="#000" ng-class="active"></div>
+            <li class="menuitem" ng-repeat="mi in menuItems" ng-class="{active:isActive(mi.id)} " ng-click="selectItem(mi)"><a href="#/{{mi.id}}">{{mi.name}}</a>
+                <div tick tick-position="bottom" tick-color="#000" item="mi" class="menuitem" ng-class="active">
+                    {{item.label}}
+                </div>
+            </li>
+        </ul>
+    </div>
+</menu>
