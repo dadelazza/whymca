@@ -15,8 +15,8 @@ app.factory('Poller', function($http, $timeout) {
   data.car = { response: {}, calls: 0 };
   data.weather = { response: {}, calls: 0 };
   var poller = function() {
-    //$http.get('assets/data/car.json').then(function(r) {
-    $http.get('http://10.13.10.151:8080/CarMood/SpeedServlet').then(function(r) {
+    $http.get('assets/data/car.json').then(function(r) {
+    //$http.get('http://10.13.10.151:8080/CarMood/SpeedServlet').then(function(r) {
       data.car.response = r.data;
       data.car.calls++;
       $timeout(poller, 60000);
@@ -27,6 +27,7 @@ app.factory('Poller', function($http, $timeout) {
       data.weather.calls++;
       $timeout(poller, 60000);
     });
+    
   };
   poller();
   
