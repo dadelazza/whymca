@@ -1,6 +1,6 @@
 
 <div ng-controller="MainCtrl">
-	<h1>test</h1>
+	<h1>CarMood</h1>
         <div class="car">
            <div>frontLeftDoor: {{car.frontLeftDoor}}</div>
            <div>headlights: {{car.headlights}}</div>
@@ -16,8 +16,14 @@
         	<div>latitude: {{position.coords.latitude}}</div>
             <div>longitude: {{position.coords.longitude}}</div>
         </div>
-        <div id="location"></div>
-        <button onclick="getLocation()">Try It</button> 
+        <p>Songs</p>
+        	<div class="songs">
+	                <div>title: {{songs[0].title}}
+	                <audio controls>
+	                	<source src="{{songs[0].audio_url}}" type="audio/mpeg">
+	                </audio> 
+	                </div>
+	       </div>
         
     </ul>
 </div>
