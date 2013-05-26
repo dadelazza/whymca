@@ -8,35 +8,6 @@ var app = angular.module('CarMoodApp', [])
             .otherwise({redirectTo: '/'});
   }]);
 
-app.run(function(Poller) {});
-
-app.factory('Poller', function($http, $timeout) {
-  var data = {car:{}, weather:{}};
-  data.car = { response: {}, calls: 0 };
-  data.weather = { response: {}, calls: 0 };
-  var poller = function() {
-    $http.get('assets/data/car.json').then(function(r) {
-    //$http.get('http://10.13.10.151:8080/CarMood/SpeedServlet').then(function(r) {
-      data.car.response = r.data;
-      data.car.calls++;
-      $timeout(poller, 60000);
-    });
-    $http.get('assets/data/weather.json').then(function(r) {
-    //$http.get('http://10.13.10.151:8080/CarMood/WeatherServlet?lat=45.4973432&lon=9.2212303').then(function(r) {
-      data.weather.response = r.data;
-      data.weather.calls++;
-      $timeout(poller, 60000);
-    });
-    
-  };
-  poller();
-  
-  return {
-    data: data
-  };
-});
-
-
 function getLocation(scope)
   {
   if (navigator.geolocation)
