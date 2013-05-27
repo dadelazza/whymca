@@ -1,29 +1,34 @@
 
 <div ng-controller="MainCtrl">
 	<h1>CarMood</h1>
-        <div class="car">
-           <div>frontLeftDoor: {{car.frontLeftDoor}}</div>
-           <div>headlights: {{car.headlights}}</div>
-           <div>backRightDoor: {{car.backRightDoor}}</div>
-           <div>speed: {{car.speed}}</div>
-           <div>frontRightDoor: {{car.frontRightDoor}}</div>
-           <div>frontLeftDoor: {{car.backLeftDoor}}</div>
-        </div> 
-        <div class="weather">
-           <img src='{{weather.icon}}'/>
-        </div> 
-        <div class="location">
-        	<div>latitude: {{position.coords.latitude}}</div>
-            <div>longitude: {{position.coords.longitude}}</div>
-        </div>
-        <p>Songs</p>
-        	<div class="songs">
-	                <div>title: {{songs[0].title}}
-	                <audio controls>
-	                	<source src="{{songs[0].audio_url}}" type="audio/mpeg">
-	                </audio> 
-	                </div>
-	       </div>
-        
-    </ul>
+  <div class="car">
+    <h3>DQuid</h3>
+    <div>frontLeftDoor: {{car.frontLeftDoor}}</div>
+    <div>headlights: {{car.headlights}}</div>
+    <div>backRightDoor: {{car.backRightDoor}}</div>
+    <div>speed: {{car.speed}}</div>
+    <div>frontRightDoor: {{car.frontRightDoor}}</div>
+    <div>frontLeftDoor: {{car.backLeftDoor}}</div>
+  </div> 
+  <div class="weather">
+    <h3>MeTwit</h3>
+    <img src='{{weather.icon}}'/>
+  </div> 
+  <div class="songs">
+    <h3>SoundMood</h3>
+    <div>title: {{songs[0].title}}
+     <audio controls>
+      <source src="{{songs[0].audio_url}}" type="audio/mpeg">
+      </audio> 
+    </div>
+  </div>
+  <div class="location">
+    <h3>Location</h3>
+    <div>latitude: {{position.coords.latitude}}</div>
+    <div>longitude: {{position.coords.longitude}}</div>
+  </div>
+  <div class="test">
+    <h3>Test call to a pubblic api (testing CORS)</h3>
+    <div>error: {{test.error}}</div>
+  </div>
 </div>
